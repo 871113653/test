@@ -1,7 +1,22 @@
-echo "# test" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/871113653/test.git
-git push -u origin master
-                
+# NeonLog
+
+科技感混合个人博客（Next.js + Markdown）。
+
+## 功能
+- 评论（Giscus）
+- 暗黑模式（next-themes）
+- 访问统计（Plausible）
+- RSS（/rss.xml）
+- 搜索（标题/标签/摘要）
+
+## 快速开始
+```bash
+npm install
+npm run dev
+```
+
+## 评论配置
+在 `components/comments.tsx` 填入你的 Giscus `repo/repoId/categoryId`。
+
+## 统计配置
+复制 `.env.example` 为 `.env.local` 并设置域名。

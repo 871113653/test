@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #060b16;
+  --surface: #0d1324;
+  --text: #d9e5ff;
+  --muted: #8fa7d9;
+  --accent: #5ee1ff;
+}
+
+.light {
+  --bg: #f7f9ff;
+  --surface: #ffffff;
+  --text: #14203b;
+  --muted: #5d6f96;
+  --accent: #0b6bff;
+}
+
+body { background: var(--bg); color: var(--text); }
+.card { background: var(--surface); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent); }
